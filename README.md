@@ -1,2 +1,13 @@
 # redshift-fullscreen
 Script that disables redshift when active window is in fullscreen 
+
+## Requirements 
+xdotool
+
+## How to use
+*Pass redshift arguments*
+'./redshift-fullscreen.sh -O 5000'
+
+## i3wm example
+'exec --no-startup-id ~/redshift-fullscreen/redshift-fullscreen.sh -O 5000'
+
