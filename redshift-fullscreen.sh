@@ -1,12 +1,12 @@
 #!/bin/bash
 
 REDSHIFT_STATUS="disabled"
-REDSHIFT_ARGS="$@"
+REDSHIFT_ARGS="$*"
 
 
 enable_redshift() {
     if [ "$REDSHIFT_STATUS" != "enabled" ]; then
-        redshift $REDSHIFT_ARGS  > /dev/null & 
+        redshift "$REDSHIFT_ARGS"  > /dev/null & 
         REDSHIFT_STATUS="enabled"
     fi
 }
