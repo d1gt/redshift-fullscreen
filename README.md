@@ -2,8 +2,8 @@
 Script that disables redshift when active window is in fullscreen 
 
 ## Requirements 
-xdotool
-xprop
+- xdotool
+- xprop
 
 ## How to use
 Pass redshift arguments to script
